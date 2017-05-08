@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:gravity="center"
+    android:background="@drawable/backgroundlogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        android:id="@+id/ll1"
+
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/dw"
+            android:layout_gravity="center"
+            android:id="@+id/imgRegistration"
+            />
+
+        <EditText
+            android:textColor="#a4a4a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:fontFamily="casual"
+            android:inputType="text"
+            android:id="@+id/etEmailReg"
+            android:padding="10dp"
+            />
+        <EditText
+            android:textColor="#a4a4a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:fontFamily="casual"
+            android:inputType="text"
+            android:id="@+id/etUnameReg"
+            android:padding="10dp"
+            />
+        <EditText
+            android:textColor="#a4a4a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:fontFamily="casual"
+            android:inputType="textPassword"
+            android:id="@+id/etPassReg"
+            android:maxEms="15"
+            android:padding="10dp"/>
+        <EditText
+            android:textColor="#a4a4a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="refill password"
+            android:fontFamily="casual"
+            android:inputType="textPassword"
+            android:id="@+id/etPassReg2"
+            android:maxEms="15"
+            android:padding="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnReg"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:fontFamily="serif-monospace"
+        android:textStyle="bold"
+        android:layout_below="@id/ll1"
+        android:layout_alignRight="@id/ll1"
+        android:textColor="@color/redgrey"
+        android:background="@drawable/buttongradient"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:text="Click here to login"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/redgrey"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:fontFamily="monospace"
+        android:onClick="onLogin"
+        android:id="@+id/onLogin"
+        android:background="@drawable/design_et"
+        />
+
+</RelativeLayout>
